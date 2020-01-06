@@ -107,5 +107,6 @@ public class RhythmGame extends JFrame {
 	}
 	
 	// 주석
+	// 주석
 	
 }
