@@ -106,7 +106,7 @@ public class RhythmGame extends JFrame {
 		this.repaint();
 	}
 	
-	// 주석 달면서 공부
+	// Class, package, form 등등
 	// 
 
 }
