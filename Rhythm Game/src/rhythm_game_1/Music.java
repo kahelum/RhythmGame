@@ -15,7 +15,6 @@ public class Music extends Thread {
 	private BufferedInputStream bis;
 	
 	public Music(String name, boolean isLoop) {
-		
 		try {
 			this.isLoop = isLoop;
 			file = new File(Main.class.getResource("../music/" + name).toURI());
@@ -42,7 +41,6 @@ public class Music extends Thread {
 
 	@Override
 	public void run() {
-		
 		try {
 			do {
 				player.play();
