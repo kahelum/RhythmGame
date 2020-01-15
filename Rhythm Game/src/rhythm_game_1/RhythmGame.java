@@ -107,6 +107,6 @@ public class RhythmGame extends JFrame {
 	}
 	
 	// Class, package, form µîµî
-	// 
+	// 2wn
 
 }
