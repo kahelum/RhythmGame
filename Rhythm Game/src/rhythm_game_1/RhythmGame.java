@@ -108,4 +108,4 @@ public class RhythmGame extends JFrame {
 	
 
 }
-// 주석
+// 기초다지기
