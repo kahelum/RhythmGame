@@ -18,7 +18,7 @@ public class RhythmGame extends JFrame {
 	private Image screenImage;
 	private Graphics screenGraphics;
 	
-	private Image introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
+	private Image background = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
 	private ImageIcon exitButtonBasicImage = new ImageIcon(Main.class.getResource("../images/exitButtonBasic.png"));
 	private ImageIcon exitButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/exitButtonEntered.png"));
 	private ImageIcon startButtonBasicImage = new ImageIcon(Main.class.getResource("../images/startButtonBasic.png"));
@@ -96,7 +96,9 @@ public class RhythmGame extends JFrame {
 			public void mousePressed(MouseEvent e) {
 				Music buttonPressedMusic = new Music("buttonPressedMusic.mp3", false);
 				buttonPressedMusic.start();
-				// 게임 시작 이벤트
+				startButton.setVisible(false);
+				quitButton.setVisible(false);
+				background = new ImageIcon(Main.class.getResource("../images/mainBackground.jpg")).getImage();
 			}
 		});
 		add(startButton);
@@ -164,7 +166,7 @@ public class RhythmGame extends JFrame {
 	}
 	
 	public void screenDraw(Graphics g) {
-		g.drawImage(introBackground, 0, 0, null);
+		g.drawImage(background, 0, 0, null);
 		paintComponents(g);
 		this.repaint();
 	}
