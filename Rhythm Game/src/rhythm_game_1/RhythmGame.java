@@ -171,5 +171,5 @@ public class RhythmGame extends JFrame {
 		this.repaint();
 	}
 	
-// ¡÷ºÆ
+
 }
